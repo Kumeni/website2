@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samson Kumeni"/>
+    <meta name="keywords" content="portfolio"/>
+
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/e477c42a9e.js" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+
+    <!-- Latest Compiled minified css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Custom styling using css -->
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+
+    <title>Hotel</title>
+</head>
+<body>
+    <header class="mx-auto d-flex align-items-center">
+        <span class="left"><a><img id="companyLogo"src="./images/CompanyLogo.png" alt="companyLogo"/></a></span>
+        <span class="right rightPos"><a href="#landingContainer"> HOME </a></span>
+        <span class="rightPos"><a href="#row1"> ABOUT US </a></span>
+        <span class="rightPos"><a href="#row3"> ROOMS </a></span>
+        <span class="rightPos"><a href="#row3img"> PHOTO GALLERY </a></span>
+        <span class="rightPos"><a href="#newsAndEvents"> NEWS & EVENTS </a></span>
+        <span class="rightPos"><a href="#secondPart"> BOOK </a></span>
+        <span class="rightPos">
+            <span  >
+                <i class="fas fa-bars" id="toggle" tabindex="5" onclick="handleToggleClick()"></i>
+                <div style="position:relative">
+                    <ul id="toggleTarget" tabindex="4" onblur="handleToggleBlur()">
+                        <li><a href="#landingContainer"> HOME </a></li>
+                        <li><a href="#row1"> ABOUT US </a></li>
+                        <li><a href="#row3"> ROOMS </a></li>
+                        <li><a href="#row3img"> PHOTO GALLERY </a></li>
+                        <li><a href="#newsAndEvents"> NEWS & EVENTS </a></li>
+                        <li><a href="#secondPart"> BOOK </a></li>
+                    </ul>
+                </div>
+            </span>
+        </span>
+    </header>
+
+    <div class="container-fluid" id="landingContainer">
+        <div class="container-md" id="landingContainerChild" style="position:relative;">
+            <div id="headWelcome" >
+                <h3>WELCOME</h3>
+                <i>An exclusive meet of nature and luxury</i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Iste quae, asperiores modi enim nostrum officia voluptatum 
+                    temporibus quia nisi exercitationem.</p>
+            </div>
+        </div>
+        <div id="imgNavigation" class="d-flex flex-column">
+            <div class="lightBox"></div>
+            <div class="lightBox"></div>
+            <div class="lightBox"></div>
+        </div>
+
+    </div>
+
+    <div class="container-md d-flex flex-row text-center justify-content-center flex-wrap" id="row1">
+        <div class="flex-shrink-0 flex-grow-0">
+            <span>
+                <i class="fas fa-globe-africa"></i>
+            </span>
+            <h5><strong>Globally Experience</strong></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam accusantium facilis consequuntur vel quod,
+                sit nam quibusdam.
+            </p>
+        </div>
+        <div class="flex-shrink-0 flex-grow-0">
+            <span>
+                <i class="fas fa-umbrella"></i>
+            </span>
+            <h5><strong>Luxury Structure</strong></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam accusantium facilis consequuntur vel quod,
+                sit nam quibusdam.
+            </p>
+        </div>
+        <div class="flex-shrink-0 flex-grow-0">
+            <span>
+                <i class="fas fa-rocket"></i>
+            </span>
+            <h5><strong>VIP Service</strong></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam accusantium facilis consequuntur vel quod,
+                sit nam quibusdam.
+            </p>
+        </div>
+        <div class="flex-shrink-0 flex-grow-0">
+            <span>
+                <i class="fas fa-star"></i>
+            </span>
+            <h5><strong>Five Star Rooms</strong></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam accusantium facilis consequuntur vel quod,
+                sit nam quibusdam.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex" id="row3">
+        <div id="row3img">
+
+        </div>
+        <div id="row3Cont">
+            <div class="d-flex flex-wrap" id="row3ContRow1">
+                <span class="mr-auto row3Info">--Rooms</span>
+                <span class="mr-auto row3Info">--Private tours</span>
+                <span class="mr-auto row3Info">--Pools</span>
+                <span class="mr-auto row3Info">--Restaurants</span>
+                <span class="mr-auto row3Info">--Destinations</span>
+                <span class="mr-auto row3Info">--Spa Center</span>
+                <span class="mr-auto row3Info">--Activilers</span>
+                <span class="mr-auto row3Info">--Course Center</span>
+                <span class="mr-auto row3Info">--Kids Out</span>
+            </div>
+            <div id="row3ContRow2">
+                <h3>LUXURY<br>COMFORTABLE ROOMS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Optio ducimus, mollitia repudiandae 
+                     ad atque reiciendis sit. Eveniet voluptatem quo obcaecati 
+                     nam delectus, quidem et tenetur eum. Lorem, ipsum dolor 
+                     sit amet consectetur adipisicing elit. Vitae aut repellat
+                      voluptate neque magni aspernatur deleniti.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex" id="row4">
+        <div id="newsAndEvents" >
+            <div class="clearfix"><h5>NEWS & EVENTS<span class="float-right"><i class="fas fa-link"></i></span></h5></div>
+            <section class="d-flex">
+                <div>
+                    <img src="images/food delicasy.jpg" alt="food delicasy in Kenya"/>
+                </div>
+                <div>
+                        <p> Jan 14,2019<br>
+                        <strong>Cooking competition</strong></p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quis suscipit.  
+                        </p>
+                </div>
+            </section>
+            <section class="d-flex">
+                <div>
+                    <img src="images/wp2223713-cheers-wallpapers.jpg" alt="cheers"/>
+                </div>
+                <div>
+                        <p> June 16,2019<br>
+                        <strong>New Year Party</strong></p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quis suscipit.
+                        </p>
+                </div>
+            </section>
+
+        </div>
+        <div id="secondPart">
+            <div>
+                <span><h5>GUEST BOOK</span><span class="float-right"><i class="fas fa-link"></i></h5></span>
+            </div>
+            <section class="d-flex">
+                <span id="quote-left"><i class="fas fa-quote-left"></i></span>
+                <div>
+                    <img class="float-right"src="./images/business partener.jpg" alt="business partner"/>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Sint hic ea atque modi quis recusandae assumenda! Ex sint dolor
+                     excepturi rerum consectetur laborum voluptatibus repellat,
+                      nihil repellendus corrupti voluptatum voluptates.
+                    </p>
+                </div>
+            </section>
+            <section class="d-flex justify-content-center">
+                <a href="https://forms.gle/3a17MAatpR5Ad8189" style="color:white;"><p id="theParagraph"><span><i class="fas fa-book"></i></span>BOOK YOUR ROOM</P></a>
+            </section>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbG2_cs-UB0l5OpetLe_assLHPyPjZksP2B7HvhA8CdkPjew/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <div  class=" container-fluid" id="footer">
+        <div class="row" id="footer-row" style="width:100%;margin:auto;">
+            <div class="col-md-6">
+                <div id="icons">
+                    <a href="#"><span><i class="fab fa-twitter"></i></span></a>
+                    <a href="#"><span><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#"><span><i class="fab fa-google-plus-g"></i></span></a>
+                    <a href="#"><span><i class="fab fa-linkedin-in"></i></span></a>
+                    <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                    <a href="#"><span><i class="fas fa-envelope"></i></span></a>
+                    <a href="#"><span><i class="fab fa-youtube"></i></span></a>
+                </div>
+                <br>
+                <p>
+                    <strong>Stay connected</strong> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere odit officia consequatur ad natus inventore deserunt! Aperiam illo,.
+                </p>
+                <div id="subcribe">
+                    <form method="POST" action="emails.php">
+                    <input type="email" placeholder="my@email.com" name="subscribeEmail" id="subscribeEmail" class="text-white"><input type="submit" value="subscribe" class="submitButton" />
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row" id="lastContainer">
+                    <div class="col-sm-6"style="min-width:165px;">
+                        <span><strong>Important Links</strong></span><br>
+                        <span><a href="#">Weather channel</a></span><br>
+                        <span><a href="#">City guide</a></span><br>
+                        <span><a href="#">Airport transfer</a></span><br>
+                        <span><a href="#">Embassy phones</a></span><br>
+                        <span><a href="#">Local agencies</a></span><br>
+                        <span><a href="#">Embassy bookings</a></span><br>
+                    </div>
+                    <div class="col-sm-6" style="min-width:120px;">
+                        <span><strong>Contact info</strong></span><br>
+                        <span><i class="fas fa-home"></i> 238691-00100, Nairobi</span><br>
+                        <span><i class="fas fa-phone"></i> +254 717551542</span><br>
+                        <span style="word-wrap: break-word;"><i class="fas fa-envelope"></i> samsonkumeni8@gmail.com</span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="border-top:1px solid rgba(255, 255, 255, 0.144);padding:5px 0px;font-size: 14px;">
+            Copyright &copy 2020 Awesome Websites
+        </div>
+    </div>
+    
+    <script src="./script.js">
+    </script>
+</body>
+</html>
