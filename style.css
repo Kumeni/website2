@@ -34,24 +34,28 @@ header a{
 }
 header ul{
     position:absolute;
-    padding:0.3rem 0rem;
+    padding:0.3rem .5rem;
     font-size:14px;
     z-index:2;
     right:-0.9rem;
     width:max-content;
+    height:100vh;
+    overflow-y: auto;
+    background-color:white;
     display:none;
+    z-index:1;
 }
 header li{
     display:none;
     list-style: none;
 }
 header li > a{
-    padding:0.3rem 1rem;
-    margin:1px 0px;
-    border-radius:3px;
+    padding:1rem 2.5rem;
     display:inline-block;
     width:100%;
-    background-color:white;
+}
+header li:not(:last-child) > a{
+    border-bottom: 1px solid rgb(97, 96, 96);
 }
 header li > a:hover{
     background-color:rgba(0, 0, 0, 0.932);
@@ -185,7 +189,7 @@ header span:nth-child(8) > div{
     position:absolute;
     bottom:3px;
     right:3px;
-    z-index:2;
+    z-index:1;
 }
 #imgNavigation > div {
     width:20px;
