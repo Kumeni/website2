@@ -51,3 +51,9 @@ function handleToggleBlur(){
 function handleSubscribeClick(){
     console.log("welcome");
 }
+
+function handleToggleTargetBlur(){
+    setTimeout(()=>{
+        toggleTarget.style.display = "none";
+    },190);
+}
